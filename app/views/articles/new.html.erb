@@ -1,0 +1,12 @@
+<h1> Créer un nouvel article <h1>
+
+<%= form_for @article do |f| %>
+  <%= f.label :title, "title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content, "content" %>
+  <%= f.text_field :content %>
+
+
+  <%= f.submit %>
+<% end %>
